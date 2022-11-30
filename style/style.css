@@ -52,12 +52,161 @@ header a {
   text-decoration: none;
 }
 
+header a:hover {
+  text-decoration: underline;
+  background: rgb(195, 252, 248);
+  color: #272044;
+  transition: ease-in 200ms;
+}
+
+main {
+  background: whitesmoke;
+}
+
+section h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../images/bali-footer.jpeg");
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Poppins";
+  font-style: normal;
+  color: white;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+
+footer a:hover {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+footer h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+footer p {
+  opacity: 0.6;
+}
+
 .container {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+.why-bali {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.why-bali img {
+  max-width: 100%;
+  height: 400px;
+  padding: 20px 10px;
+}
+
+.why-bali h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #272044;
+  margin: 10px;
+}
+
+.why-bali p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #272044;
+  opacity: 0.9;
+  padding: 30px;
+}
+
+.why-bali h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+}
+
+.card-grid {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 350px;
+  height: 750px;
+  background: #ffffff;
+  box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
+}
+
+.card-grid img {
+  width: 185px;
+  height: 185px;
+}
+
+.card-grid h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 5px;
+}
+
+.card-grid p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #272044;
+  opacity: 0.7;
+  margin: 25px;
+}
+
+.card-grid a {
+  padding: 16px 32px;
+  margin: 40px 20px;
+  background: #462cb3;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.git-hub-footer {
+  font-size: 15px;
+  opacity: 0.4;
+  color: aquamarine;
+  text-transform: capitalize;
+}
+
+.git-hub-footer a {
+  text-decoration: none;
+}
+
+.git-hub-footer a:hover {
+  text-decoration: underline;
+  color: aquamarine;
+}
+
+@media (max-width: 576px) {
   header {
     padding: 60px 0;
   }
