@@ -60,13 +60,37 @@ header a:hover {
 }
 
 main {
+  max-width: 1500px;
   background: whitesmoke;
 }
 
+main h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #272044;
+  text-transform: uppercase;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #272044;
+  opacity: 0.7;
+}
+
 section {
-  max-width: 1200px;
   margin: 0auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 footer {
@@ -110,6 +134,7 @@ footer p {
 
 .responsive-img {
   max-width: 100%;
+  display: block;
 }
 
 .grid {
@@ -154,24 +179,46 @@ footer p {
   padding: 30px;
 }
 
-.card-grid {
+.secondary-section {
+  background: #f8f8f8;
 }
 
-.card-grid img {
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card-grid h5 {
+.card {
+  max-width: 100%;
+  background: white;
 }
 
-.card-grid p {
+.card-body {
+  padding: 12px;
 }
 
-.card-grid a {
+.card-footer {
+  padding: 0 10px;
 }
 
-.grid-3col {
+.card a {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px;
+  gap: 10px;
+  width: 306px;
+  height: 53px;
+  background: #462cb3;
+}
+
+.grid-2-col {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr;
   font-weight: 300;
   font-size: 22px;
   line-height: 1;
@@ -179,13 +226,6 @@ footer p {
   color: white;
   margin: 10px;
   text-align: left;
-}
-
-.grid-3col a {
-}
-
-.grid-3col p {
-  margin: 20px 10px;
 }
 
 .git-hub-footer {
