@@ -9,9 +9,9 @@ header {
     url("../images/bali-header.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
+  padding: 200px;
   color: #ffffff;
-  margin: 20px 10px;
+  margin: 0auto;
 }
 
 header h1 {
@@ -63,21 +63,15 @@ main {
   background: whitesmoke;
 }
 
-section h4 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.5;
-  text-align: center;
-  color: #272044;
-  text-decoration: underline;
-  text-transform: capitalize;
+section {
+  max-width: 1200px;
+  margin: 0auto;
+  padding: 100px 0;
 }
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("../images/bali-footer.jpeg");
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   font-family: "Poppins";
   font-style: normal;
   color: white;
@@ -110,30 +104,48 @@ footer p {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.why-bali {
+.responsive-img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-why-bali {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.why-bali img {
-  max-width: 100%;
-  height: 400px;
+.grid-why-bali img {
+  height: 300px;
   padding: 20px 10px;
 }
 
-.why-bali h3 {
+.grid-why-bali h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   color: #272044;
-  margin: 10px;
+  margin: 0auto;
 }
 
-.why-bali p {
+.grid-why-bali h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  margin: 0auto;
+}
+
+.grid-why-bali p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -142,52 +154,38 @@ footer p {
   padding: 30px;
 }
 
-.why-bali h4 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
-}
-
 .card-grid {
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 350px;
-  height: 750px;
-  background: #ffffff;
-  box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
 }
 
 .card-grid img {
-  width: 185px;
-  height: 185px;
 }
 
 .card-grid h5 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1;
-  color: #272044;
-  margin: 5px;
 }
 
 .card-grid p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
-  color: #272044;
-  opacity: 0.7;
-  margin: 25px;
 }
 
 .card-grid a {
-  padding: 16px 32px;
-  margin: 40px 20px;
-  background: #462cb3;
-  color: aliceblue;
-  border-radius: 5px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  margin: 10px;
+  text-align: left;
+}
+
+.grid-3col a {
+}
+
+.grid-3col p {
+  margin: 20px 10px;
 }
 
 .git-hub-footer {
@@ -221,5 +219,14 @@ footer p {
 
   header h3 {
     font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
